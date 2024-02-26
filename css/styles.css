@@ -236,7 +236,7 @@ a {
   margin-bottom: 16px;
 }
 
-.subscribe-form {
+.modal-subscribe-form {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -672,6 +672,7 @@ a {
 
 .subscribe-form {
   display: flex;
+  gap: 24px;
 }
 .subscribe-input {
   border: 1px solid #fff;
@@ -681,7 +682,6 @@ a {
   padding-left: 16px;
   background-color: #2e2f42;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  margin-right: 24px;
 }
 
 .subscribe-input::placeholder {
