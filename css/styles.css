@@ -628,7 +628,7 @@ a {
   gap: 8px;
 }
 
-.modal-subscribe-form-box {
+.modal-subscribe-input-box {
   margin-bottom: 8px;
 }
 
@@ -648,6 +648,7 @@ a {
   height: 40px;
   padding-left: 38px;
   outline: transparent;
+  background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -668,11 +669,12 @@ a {
   border-color: #4d5ae5;
 }
 
-.modal-coment:focus .input-icon {
-  fill: #4d5ae5;
-}
 .input-icon-box {
   position: relative;
+}
+
+.input-icon-box:focus .input-icon {
+  fill: #4d5ae5;
 }
 
 .modal-coment-textarea {
