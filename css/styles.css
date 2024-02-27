@@ -688,17 +688,11 @@ a {
   height: 120px;
   resize: none;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-}
-
-.modal-coment-textarea::placeholder {
-  font-family: inherit;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-label {
@@ -707,26 +701,43 @@ a {
 .checkbox {
   margin-right: 8px;
 }
-.checkbox-icon-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.checkbox-icon {
-  position: absolute;
-  fill: #f4f4fd;
-  left: 1px;
-  top: 2px;
-}
 
-.checkbox-p {
+.privacy-label {
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+.span-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: transparent;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.checkbox-span {
+.checkbox-icon {
+  fill: #f4f4fd;
+  left: 1px;
+  top: 2px;
+}
+
+.checkbox:checked + .span-checkbox {
+  border: none;
+  background-color: #404bbf;
+}
+
+.checkbox:checked + .checkbox-icon {
+  fill: #f4f4fd;
+}
+
+.privacy-policy {
   line-height: 1.33333;
   text-decoration: underline;
   text-decoration-skip-ink: none;
