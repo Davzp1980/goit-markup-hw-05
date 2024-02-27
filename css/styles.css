@@ -699,10 +699,11 @@ a {
   margin-bottom: 4px;
 }
 .checkbox {
-  margin-right: 8px;
 }
 
 .privacy-label {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
@@ -715,6 +716,7 @@ a {
   fill: transparent;
   width: 16px;
   height: 16px;
+  margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
