@@ -673,7 +673,7 @@ a {
   position: relative;
 }
 
-.input-icon-box:active .input-icon {
+.modal-input:focus + .input-icon {
   fill: #4d5ae5;
 }
 
@@ -702,19 +702,15 @@ a {
 }
 
 .checkbox-label {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  margin-bottom: 24px;
+  margin-bottom: 4px;
 }
 .checkbox {
   margin-right: 8px;
 }
 .checkbox-icon-box {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .checkbox-icon {
   position: absolute;
@@ -722,6 +718,14 @@ a {
   left: 1px;
   top: 2px;
 }
+
+.checkbox-p {
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
 .checkbox-span {
   line-height: 1.33333;
   text-decoration: underline;
