@@ -553,6 +553,9 @@ a {
 /* ==========Modal window========== */
 
 .back-drop {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -561,6 +564,12 @@ a {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
 }
 
 .modal-window {
@@ -623,9 +632,6 @@ a {
 }
 
 .modal-subscribe-form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .modal-subscribe-input-box {
@@ -653,6 +659,7 @@ a {
 }
 
 .input-icon {
+  fill: #2e2f42;
   position: absolute;
   top: 50%;
   left: 16px;
@@ -741,15 +748,16 @@ a {
 }
 
 .modal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   border-radius: 4px;
   font-family: inherit;
-  align-self: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
   color: #fff;
   padding: 16px 32px;
   min-width: 169px;
@@ -757,6 +765,7 @@ a {
   background-color: #4d5ae5;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: auto;
 }
 
 .modal-button:hover,
