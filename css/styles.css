@@ -748,9 +748,7 @@ a {
 }
 
 .modal-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   border: none;
   border-radius: 4px;
   font-family: inherit;
